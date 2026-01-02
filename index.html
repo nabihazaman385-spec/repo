@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CentralPark VibeGuide - Home</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Restaurant Directory</a></li>
+            <li><a href="suggest.html">Suggest a Spot</a></li>
+            <li><a href="about.html">Meet the Team</a></li>
+        </ul>
+    </nav>
+
+<header>
+    <div class="header-overlay">
+        <h1>CentralPark VibeGuide</h1>
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="restaurant-search" placeholder="Search for a restaurant, café, or vibe...">
+        </div>
+    </div>
+</header>
+
+
+    <div class="container">
+        
+        <div class="intro-box">
+            <h2>What is this?</h2>
+            <p>Welcome to CentralPark VibeGuide – your digital concierge for DHA Islamabad's Central Park food strip. We use real-time logic to show which restaurants are currently open (12 PM – 2 AM) and help you filter by mood, making dining decisions fast and fun.</p>
+        </div>
+
+        <section id="mood-filter">
+            <h2>Filter by Vibe</h2>
+            <div class="buttons-container">
+                <button class="button" data-mood="all">All Restaurants</button>
+                <button class="button secondary" data-mood="Family Dinner">Family Dinner</button>
+                <button class="button secondary" data-mood="Quick Snack">Quick Snack</button>
+                <button class="button secondary" data-mood="Late Night">Late Night</button>
+                <button class="button secondary" data-mood="Coffee & Chill">Coffee & Chill</button>
+                <button class="button secondary" data-mood="Best View">Best View</button>
+            </div>
+        </section>
+
+        <section id="restaurant-grid"></section>
+
+        <section style="text-align:center; margin:60px 0;">
+            <button id="spin-button" class="button">Spin the Plate</button>
+        </section>
+        
+    </div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="random-restaurant"></div> </div>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <p class="footer-credit">Developed with ❤️  by</p>
+            
+            <div class="team-names">
+                <span>Maryam Ejaz Malik</span>
+                <span class="divider">|</span>
+                <span>Marwah Hayat</span>
+                <span class="divider">|</span>
+                <span>Muhammad Haris Rao</span>
+            </div>
+            
+            <p class="footer-copyright">&copy; 2025 DHA Central Park Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
